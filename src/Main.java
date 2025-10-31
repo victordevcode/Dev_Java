@@ -19,12 +19,13 @@ void main() {
     campoTextoNome.setBounds(20, 40, 200, 20);
     janela.getContentPane().add(campoTextoNome);
 
-    JButton botaoEnviar = new JButton("Enviar");
+    JButton botaoEnviar = new JButton();
+    botaoEnviar.setText("Enviar");
     botaoEnviar.setBounds(20, 60, 100, 20);
     janela.getContentPane().add(botaoEnviar);
     botaoEnviar.addActionListener(event -> {
         String nomeDigitado = campoTextoNome.getText();
-        JOptionPane.showMessageDialog(janela, "Bem Vindo! " + nomeDigitado);
+        JOptionPane.showMessageDialog(janela, "Seja Bem Vindo!  " + nomeDigitado);
 
     });
 
