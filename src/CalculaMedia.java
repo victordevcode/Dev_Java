@@ -16,7 +16,12 @@ public class CalculaMedia {
 
         double media = (nota1+nota2+nota3) / 3;
 
-        System.out.println("A media da Auluna é: "+media);
+        if(media>=6){
+            System.out.println("Aprovado! Sua média é : "+media);
+        }
+        else{
+            System.out.println("Reprovado! Sua media é " +media +" inferior a 6");
+        }
 
 teclado.close();
     }

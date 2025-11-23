@@ -16,9 +16,21 @@ public class CalculadoraIdade {
 
         int resultado = anoAtual - anoNascimento;                ;
 
+if ( resultado<=18){
+    System.out.println("Você é menor de idade (18 anos)! Você tem "+resultado+" anos");
+}
+else if (resultado >= 18 & resultado <= 60){
+        System.out.println("Você é maior de idade (18 anos! Você tem "+resultado+" anos)");
+}
+else {
+    System.out.println("Você é idoso! (+60 anos)! Você tem "+resultado+" anos");
+}
 
 
-        System.out.println("A idade é :"+ resultado);
+
+
+        //System.out.println("A idade é :"+ resultado);
+
     leitorTeclado.close();
 }
 }
